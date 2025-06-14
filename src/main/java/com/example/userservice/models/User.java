@@ -16,6 +16,6 @@ public class User extends Base {
     private String email;
     private String password;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles;
 }
